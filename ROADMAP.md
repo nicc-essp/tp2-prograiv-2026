@@ -2,9 +2,11 @@
 
 Es un **TP de TDD** *(Rojo → Verde → Refactor)*: hay que completar una API REST de notas en TypeScript + Express + SQLite, testeada con Vitest/Supertest (unitarios e integración) y Playwright (E2E).
 
-Ya viene resuelto (no lo toquen): la conexión SQLite, el repositorio (NoteRepository.ts), las rutas y el controller HTTP, el armado de la app y el helper de reset/seed para E2E.
+Ya viene resuelto (no lo toquen): la conexión SQLite (`src/db/connection.ts`), el repositorio (`src/repositories/NoteRepository.ts`), las rutas (`src/routes/notes.ts`) y el controller HTTP (`src/controllers/NoteController.ts`), el armado de la app (`src/app.ts`) y el helper de reset/seed para E2E.
 
-Lo que falta vive casi todo en un solo archivo, **src/services/NoteService.ts** (tiene 5 métodos marcados con comentarios EJERCICIO N), más los tests correspondientes en **tests/unit/** y **tests/integration/**.
+Lo que **SÍ hay que modificar/completar** vive casi todo en:
+- **`src/services/NoteService.ts`** (tiene 5 métodos marcados con comentarios `EJERCICIO N`).
+- Los tests correspondientes en **`tests/unit/`**, **`tests/integration/`** y **`e2e/`**.
 
 ## Reglas que aplican a todo el grupo:
 
