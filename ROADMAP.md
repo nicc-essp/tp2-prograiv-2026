@@ -16,8 +16,8 @@ Lo que **SÍ hay que modificar/completar** vive casi todo en:
 - Para cada ejercicio donde ustedes escriben el test (2, 3, 4, 5, 6, 7): mínimo 2 commits separados — uno solo con el test en rojo, y después uno o más con la implementación en verde. Un commit que mezcle test + implementación invalida el ejercicio de TDD.
 - Realizar commits separados, primero del rojo, y luego del verde (rojo→verde). 
   - **Convención de commits:**
-    - Commit 1 (Rojo): `test(notas): agregar tests para getNote`
-    - Commit 2 (Verde): `feat(notas): implementar getNote y manejar 404`
+    - Commit 1 (Rojo): `test(notas): agregar tests para getNote (rojo)`
+    - Commit 2 (Verde): `feat(notas): implementar getNote y manejar 404 (verde)`
 
 ##	Cuadro de tareas
 | Ejercicio | Que hay que hacer | Punto de partida |
