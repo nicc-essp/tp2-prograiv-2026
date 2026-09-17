@@ -23,7 +23,7 @@ Lo que **SÍ hay que modificar/completar** vive casi todo en:
 | Ejercicio | Que hay que hacer | Punto de partida | Estado |
 |-------|-------------------|------------------|--------|
 |1|	createNote|	Test ya escrito, en rojo — solo falta implementar| Completado ✅ |
-|2|	listNotes|	Implementación ya en verde — falta escribir el test| Pendiente ⬜ |
+|2|	listNotes|	Implementación ya en verde — falta escribir el test| Completado ✅ |
 |3|	getNote (+ 404 si no existe)|Tests (unitario + integración) + Implementación| Pendiente ⬜ |
 |4|	updateNote (patch parcial)|Tests (unitario + integración) + Implementación| Pendiente ⬜ |
 |5|	deleteNote|Tests (unitario + integración) + Implementación| Pendiente ⬜ |
