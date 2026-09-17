@@ -27,7 +27,7 @@ Lo que **SÍ hay que modificar/completar** vive casi todo en:
 |3|	getNote (+ 404 si no existe)|Tests (unitario + integración) + Implementación| Pendiente ⬜ |
 |4|	updateNote (patch parcial)|Tests (unitario + integración) + Implementación| Pendiente ⬜ |
 |5|	deleteNote|Tests (unitario + integración) + Implementación| Pendiente ⬜ |
-|6|	Notificar cuando pinned:true (extiende createNote), mockeando con vi.mock|Depende del 1| Pendiente ⬜ |
+|6|	Notificar cuando pinned:true (extiende createNote), mockeando con vi.mock| Depende del 1 | Completado ✅ |
 |7|	E2E con Playwright: 1 caso feliz + 1 de error|Depende de que 1–6 estén resueltos| Pendiente ⬜ |
 
 <br>
