@@ -1,11 +1,11 @@
-import { describe, expect, it, beforeAll } from 'vitest';
+import { describe, expect, it, beforeEach } from 'vitest';
 import request from 'supertest';
 import { makeApp } from '../../src/app';
 
-describe('DELETE /notes/delete/:id', () => {
+describe('DELETE /notes/:id', () => {
   let app: any;
 
-  beforeAll(() => {
+  beforeEach(() => {
     app = makeApp(':memory:')
   });
 
@@ -16,5 +16,10 @@ describe('DELETE /notes/delete/:id', () => {
     const response = await request(app).delete(`/notes/${notaId}`);
 
     expect(response.status).toBe(204);
+  });
+
+  it('debe responder 404 si la nota no existe', async () => {
+  const response = await request(app).delete('/notes/9999');
+  expect(response.status).toBe(404);
   });
 });
