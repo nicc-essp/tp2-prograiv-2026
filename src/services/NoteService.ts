@@ -1,6 +1,7 @@
 import { NoteRepository } from '../repositories/NoteRepository';
 import { Note, NewNote, NotePatch } from '../models/Note';
 import { notify } from './notificationService';
+import { number } from 'zod';
 
 // Contrato fijo. Las rutas (src/routes/notes.ts) y los tests de la cátedra
 // llaman a estos 5 métodos por su nombre exacto: no los renombren.
@@ -52,6 +53,6 @@ export class NoteServiceImpl implements NoteService {
 
   deleteNote(id: number): boolean {
     // 🔴🟢 EJERCICIO 5: ciclo completo.
-    throw new Error('deleteNote: no implementado (Ejercicio 5)');
+    return this.repo.delete(id);
   }
 }
