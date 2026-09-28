@@ -1,6 +1,7 @@
 import { NoteRepository } from '../repositories/NoteRepository';
 import { Note, NewNote, NotePatch } from '../models/Note';
 import { notify } from './notificationService';
+import { runInThisContext } from 'vm';
 
 // Contrato fijo. Las rutas (src/routes/notes.ts) y los tests de la cátedra
 // llaman a estos 5 métodos por su nombre exacto: no los renombren.
@@ -41,7 +42,7 @@ export class NoteServiceImpl implements NoteService {
 
   getNote(id: number): Note | undefined {
     // 🔴🟢 EJERCICIO 3: ciclo completo (test + implementación).
-    throw new Error('getNote: no implementado (Ejercicio 3)');
+    return this.repo.findById(id);
   }
 
   updateNote(id: number, patch: NotePatch): Note | undefined {
